@@ -40,28 +40,30 @@ const NavItems = [
   return (
     <>
 
-    <nav className = "w-full bg-primary-color shadow-md fixed">
 
-        <div className = "flex flex-row justify-start md:justify-between  space-x-9 px-4 py-3 max-w-7xl mx-auto items-center">
+  
+    <nav className = "w-full bg-primary-color dark:bg-dark-primary-color dark:opacity-90 dark:border-b dark:border-b-outline-color shadow-md ">
+ 
+        <div className = "flex flex-row justify-start md:justify-between  space-x-9 px-10 py-4 md:py-3 max-w-7xl mx-auto items-center">
 
         
     
             <div className = "md:hidden">
-                <RxHamburgerMenu onClick = {toggleMenu} className = "  text-3xl"/>
+                <RxHamburgerMenu onClick = {toggleMenu} className = "  text-3xl text-black dark:text-white"/>
             </div>
 
             <div>
-                <span className = "text-3xl">Bibek Pandit</span>
+                <span className = "text-3xl mix_colors">Bibek Pandit</span>
 
             </div>
 
-            <div className = "max-md:hidden flex flex-row space-x-4 items-center justify-center">
+            <div className = "max-md:hidden  flex flex-row gap-x-4 items-center justify-center">
 
                 {
                     NavItems.map((item,index)=>(
-                        <div key={index} className = " px-3 flex rounded-md py-2 space-x-2 ">
-                            <span className = "text-3xl">{item.icon}</span>
-                            <h3 className = "text-xl text-black">{item.title}</h3>
+                        <div key={index} className = "group px-3 flex  py-2 space-x-2 cursor-pointer rounded-md nav-hover">
+                            <span className = "text-2xl group-hover:text-white text-black dark:text-white">{item.icon}</span>
+                            <h3 className = "text-xl text-black dark:text-white group-hover:text-white ">{item.title}</h3>
                         </div>
  
                     ))
@@ -86,14 +88,14 @@ const NavItems = [
 
     
 
-    <section className = {`md:hidden absolute z-40 top-15 h-[calc(100vh-60px)] w-26 bg-white border-1 border-black flex flex-col gap-40 transform ${isOpen ? "translate-x-0": "-translate-x-full"} duration-100 ease-in-out `}>
+    <section className = {`md:hidden absolute border-r border-r-gray-300 dark:border-r-outline-color z-40 top-17 h-[calc(100vh-70px)] w-26 bg-primary-color dark:bg-dark-primary-color shadow-md border-t border-t-gray-300 dark:border-t-outline-color flex flex-col gap-40 transform ${isOpen ? "translate-x-0": "-translate-x-full"} duration-100 ease-in-out `}>
         
         <div className ="flex flex-col  ">
-            {NavItems.map((item)=>(
-                <div className = "flex flex-col gap-2 px-2 py-4 items-center ">
-                    <span className = "text-2xl">{item.icon}</span>
-                    <h3 className = "text-xl">{item.title}</h3>
-                </div>
+            {NavItems.map((item,i)=>(
+                <ul key={i} className = " group flex flex-col gap-2  py-4 items-center  even:bg-lightest-color odd:bg-lighter-color dark:even:bg-dark-secondary-color dark:odd:bg-dark-fourth-color  cursor-pointer rounded-sm nav-hover">
+                    <li  className = "group-hover:text-white text-xl text-black dark:text-white list-none">{item.icon}</li>
+                    <li className = "group-hover:text-white  text-black dark:text-white list-none">{item.title}</li>
+                </ul>
             ))}
 
         </div>

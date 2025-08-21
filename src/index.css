@@ -2,46 +2,52 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+ @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 
 
 body{
- font-family: "Ubuntu", sans-serif;
-  @apply bg-primary-color dark:bg-dark-primary-color 
+ font-family: "Poppins", sans-serif;
+
+  @apply bg-gray-400 dark:bg-dark-secondary-color text-black dark:text-white 
   
 }
 
 @theme{
       /* colors */
-      --color-dark-primary-color : #101828; /*overall color*/
+      /*light theme*/
       --color-primary-color:#FFFFFF;
-      --color-secondary-color:#080808;
-      --color-dark-secondary-color:#101828;
-      --color-dark-tertiary-color:#120307;
+      --color-secondary-color:rgb(209, 213, 219);  /*gray-300*/
+      --color-tertiary-color:#6B7280;
+      --color-lightest-color:#F3F4F6;
+      --color-lighter-color:#E5E7EB;
       
       
-      --color-dark-primary:#101828;
-      --color-button-color:#465FFF;
-      --color-nav-bgcolor:#FFFFFF;
-      --color-text-primary:#344054;  /*headings*/
-      --color-dark-text-primary:#E6E6E6;
-      --color-text-secondary:#667085;   /*description*/
-      --color-font-tertiary:#E6E6E6;
 
-      /* mobile */
-      --font-mobile-headings:32px;
-      --font-mobile-nav-title:18px;
-      --font-mobile-paragraphics:14px;
-      
+      /* --color-dark-primary-color : #101828;  */
+      --color-dark-primary-color:#000000; 
+      --color-dark-secondary-color: #11121a; /*whole background color*/
+      --color-dark-tertiary-color:#1c1f2b; /*background over color (for 
+      boxes)*/
+      --color-dark-fourth-color:#2A2B3C;
+      --color-dark-fifth-color:rgb(152, 156, 255);
 
 
+      /*For outline*/
+      --color-outline-color:#4B5563;
 
-      --font-headings:60px;
-      --font-nav-title:24px;
-      --font-paragraph:20px;
+      /*button color*/
+      --color-button-color:rgb(62, 68, 254);
 
-      
+
+
+
+
+    
+    
+     
 
 
 }
@@ -54,4 +60,40 @@ body{
       .big-icons{
             @apply w-8 h-8 text-black dark:text-white
       }
+
+      .nav-hover:hover{
+            @apply bg-button-color text-white transition-all duration-100 ease-in;
+      }
+      .nav-hover:active{
+             @apply bg-button-color text-white transition-all duration-100 ease-in;
+
+      }
+
+    
+      .dark_values{
+            @apply dark:bg-dark-tertiary-color dark:text-white
+      }
+
+        .section_attributes{
+            @apply w-full px-5 mt-3 md:px-15 bg-secondary-color dark:bg-dark-tertiary-color dark:text-white h-[calc(100vh-100px)] flex flex-col md:flex-row justify-center 
+      }
+     
+      .mix_colors{
+            @apply bg-gradient-to-r from-blue-400 via-[#3E44FE]  to-blue-300 bg-clip-text text-transparent
+      }
+
+      .topic{
+            @apply text-black text-4xl dark:text-white text-center
+      }
+
+      .icon_style{
+            @apply text-3xl text-black dark:text-white
+
+      }
+      .title_style{
+            @apply text-xl font-semibold text-black dark:text-white
+
+      }
+      
 }
+

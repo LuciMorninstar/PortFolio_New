@@ -1,25 +1,29 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
+import MainLayout from './layouts/MainLayout'
+import AboutPage from './pages/AboutPage'
+import ProjectPage from './pages/ProjectPage'
 
 
 const App = () => {
 
   return (
 
-    <HomePage/>
+   <BrowserRouter>
+   <Routes>
 
-    // <BrowserRouter>
+    <Route path = "/" element={<MainLayout/>}>
 
-    // <Routes>
-
-    //   <Route path = "/" element = {Homepage}/>
-
-
-
-    // </Routes>
+    <Route index element = {<HomePage/>}/>
+    <Route path = "/about" element = {<AboutPage/>}/>
+    <Route path = "/projects" element = {<ProjectPage/>}/>
     
-    // </BrowserRouter>
+    </Route>
+
+   </Routes>
+   </BrowserRouter>
+
 
   )
 }
