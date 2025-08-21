@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+body{
+ font-family: "Ubuntu", sans-serif;
+  @apply bg-primary-color dark:bg-dark-primary-color 
+  
+}
+
+@theme{
+      /* colors */
+      --color-dark-primary-color : #101828; /*overall color*/
+      --color-primary-color:#FFFFFF;
+      --color-secondary-color:#080808;
+      --color-dark-secondary-color:#101828;
+      --color-dark-tertiary-color:#120307;
+      
+      
+      --color-dark-primary:#101828;
+      --color-button-color:#465FFF;
+      --color-nav-bgcolor:#FFFFFF;
+      --color-text-primary:#344054;  /*headings*/
+      --color-dark-text-primary:#E6E6E6;
+      --color-text-secondary:#667085;   /*description*/
+      --color-font-tertiary:#E6E6E6;
+
+      /* mobile */
+      --font-mobile-headings:32px;
+      --font-mobile-nav-title:18px;
+      --font-mobile-paragraphics:14px;
+      
+
+
+
+      --font-headings:60px;
+      --font-nav-title:24px;
+      --font-paragraph:20px;
+
+      
+
+
+}
+
+@layer utilities{
+      .small-icons{
+            @apply w-5 h-5 text-black dark:text-white
+      }
+
+      .big-icons{
+            @apply w-8 h-8 text-black dark:text-white
+      }
+}
