@@ -15,7 +15,7 @@ const ProjectCard = ({ project }) => {
           {project.title}
         </h3>
         <p className="text-justify text-sm">{project.desc}</p>
-        <div className = "flex flex-row gap-3 ">
+        <div className = "max-md:hidden  flex flex-row gap-3 ">
             <span className = "bg-gray-300 max-md:text-[10px] dark:bg-dark-tertiary-color px-5 py-2 rounded-md ">{project.technology[0]}</span>
             <span className = "bg-gray-300 max-md:text-[10px] dark:bg-dark-tertiary-color px-5 py-2 rounded-md ">{project.technology[1]}</span>
             <span className = "bg-gray-300 max-md:text-[10px] dark:bg-dark-tertiary-color px-5 py-2 rounded-md ">{project.technology[2]}</span>

@@ -15,7 +15,7 @@ const Hero = () => {
             
                 <div className = "flex flex-col gap-5">
                     <h1 className = "text-5xl md:text-7xl mix_colors">Hello, I'm <br/> Bibek Pandit</h1>
-                    <p className = "text-justify"> I am a passionate front-end developer focused on building responsive, user-friendly websites and interfaces. Currently, I am actively looking for internship opportunities to apply my skills in real-world projects and grow as a developer.</p>
+                    <p className = "text-justify"> I am a passionate aspiring web developer focused on building responsive and user-friendly websites. I am currently learning and practicing web development skills, and I am actively looking for opportunities to apply my knowledge in real-world projects and grow as a developer.</p>
 
                 </div>
 

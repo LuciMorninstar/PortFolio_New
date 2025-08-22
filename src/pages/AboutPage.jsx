@@ -1,8 +1,16 @@
 import React from 'react'
+import AboutIntro from '../components/AboutIntro'
+import Skillsets from '../components/Skillsets'
+import WorkTogether from '../components/WorkTogether'
 
 const AboutPage = () => {
   return (
-    <div>About</div>
+    <>
+    <AboutIntro/>
+    <Skillsets/>
+    <WorkTogether/>
+
+    </>
   )
 }
 

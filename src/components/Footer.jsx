@@ -1,13 +1,13 @@
 import { FaGithub, FaLinkedin, FaWhatsapp, FaFacebook } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import Socialmedia from './Socialmedia';
+import Socialmedia from "./SocialMedia";
 
 
 const Footer = () => {
 
         const socialLinks =[
   {
-    icon: <FaGithub size={24} color="#181717" />,
+    icon: <FaGithub size={24} color="#333740" />,
     title: "GitHub",
     url: "https://github.com/LuciMorninstar"
   },

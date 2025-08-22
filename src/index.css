@@ -15,6 +15,10 @@ body{
   
 }
 
+
+
+
+
 @theme{
       /* colors */
       /*light theme*/
@@ -83,7 +87,7 @@ body{
       }
 
       .topic{
-            @apply text-black text-4xl dark:text-white text-center
+            @apply text-black text-3xl font-semibold dark:text-white max-md:text-2xl
       }
 
       .icon_style{
@@ -92,6 +96,16 @@ body{
       }
       .title_style{
             @apply text-xl font-semibold text-black dark:text-white
+
+      }
+
+      .form_label_styles{
+            @apply font-semibold text-black dark:text-white
+
+      }
+
+      .form_input_styles{
+            @apply px-2 py-2 w-[400px] text-[14px] caret-button-color placeholder:text-gray-500 dark:placeholder:text-gray-300 rounded-sm border-1 border-gray-400 dark:border-gray-600
 
       }
       
