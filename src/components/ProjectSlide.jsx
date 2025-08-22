@@ -45,13 +45,13 @@ const ProjectSlide = () => {
     <div className="w-full px-5 md:px-15  bg-secondary-color dark_values h- flex flex-col md:flex-row  justify-center ">
       <div className="flex flex-col gap-10 py-10">
         <div>
-          <h1 className="topic text-center">My Projects</h1>
+          <h1 className="topic">My Projects</h1>
         </div>
 
         <div className="flex flex-col gap-10">
-          {projs.map((proj) => (
+          {projs.map((proj,i) => (
             <>
-              <div className="w-full flex flex-col gap-7 py-10 rounded-md px-20 max-md:px-10 bg-lighter-color dark:bg-dark-fourth-color justify-center center ">
+              <div key={i} className="w-full flex flex-col gap-7 py-10 rounded-md px-10 bg-lighter-color dark:bg-dark-fourth-color justify-center center ">
                 <div className="flex flex-row gap-3  ">
                   <span className="text-3xl text-black dark:text-white">
                     <FaBuildingUser />
@@ -65,6 +65,8 @@ const ProjectSlide = () => {
                 <div className="w-full">
                   <img className="rounded-md" src={proj.image} alt="image" />
                 </div>
+
+                 {/* <SwiperUse send={proj.image}/> */}
 
                 {/* after image section */}
 
@@ -81,8 +83,8 @@ const ProjectSlide = () => {
                       Key Features
                     </h3>
                     <ul className="flex flex-col gap-2">
-                      {proj.features.map((feature) => (
-                        <li className="relative before:absolute before:content-[''] before:w-4 before:h-4 before:bg-button-color max-md:text-sm before:top-1 before:-left-7 before:rounded-full">
+                      {proj.features.map((feature,i) => (
+                        <li key={i} className="relative before:absolute before:content-[''] before:w-4 before:h-4 before:bg-button-color max-md:text-sm before:top-1 before:-left-7 before:rounded-full">
                           {feature}
                         </li>
                       ))}
