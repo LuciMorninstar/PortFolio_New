@@ -19,17 +19,17 @@ const Footer = () => {
   {
     icon: <FaLinkedin size={24} color="#0077B5" />,
     title: "LinkedIn",
-    url: "https://www.linkedin.com/in/your-profile"
+    url: "https://www.linkedin.com/in/stars-winner-undefined-444930298/"
   },
   {
     icon: <FaWhatsapp size={24} color="#25D366" />,
     title: "WhatsApp",
-    url: "https://wa.me/your-number"
+    url: "https://wa.me/9818724479"
   },
   {
     icon: <FaFacebook size={24} color="#1877F2" />,
     title: "Facebook",
-    url: "https://facebook.com/your-profile"
+    url: "https://www.facebook.com/bibek.pandit.129/"
   }
 ];
   return (

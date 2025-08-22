@@ -9,7 +9,7 @@ import { IoMdContacts } from "react-icons/io";
 import ToggleDark from "./ToggleDark";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,9 +52,9 @@ const NavBar = () => {
             />
           </div>
 
-          <div>
+          <Link to ="/">
             <span className="text-3xl mix_colors">Bibek Pandit</span>
-          </div>
+          </Link>
 
           <div className="max-md:hidden  flex flex-row gap-x-4 items-center justify-center">
             {NavItems.map((item, index) => (

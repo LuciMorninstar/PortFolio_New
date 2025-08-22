@@ -5,7 +5,7 @@ import { GiLightningFlame, GiMoonBats } from 'react-icons/gi';
 const ToggleDark = () => {
 
 
-     const [isDark, setIsDark] = useState(false);
+     const [isDark, setIsDark] = useState(true);
 
 
   useEffect(()=>{

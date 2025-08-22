@@ -40,7 +40,7 @@ const techStack = [
        
        <h6 className = "topic text-center mb-7"> Skillsets</h6>
 
-       <div className = "grid grid-cols-2 gap-x-5 gap-y-7 md:grid-cols-3 lg:grid-cols-4 justify-center "> 
+       <div className = "grid grid-cols-2 gap-x-5 gap-y-7 md:grid-cols-3 lg:grid-cols-4 justify-center px-5 "> 
 
        {techStack.map((skill,index)=>(
 
