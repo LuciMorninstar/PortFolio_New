@@ -26,7 +26,7 @@ const ProjectCard = ({ project }) => {
       </div>
 
       <div className="w-40 h-40 rounded-full  md:w-70 md:h-70 flex flex-row items-center">
-        <img className =" hover:scale-120 md:hover:scale-140 hover:duration-200 hover:ease-in" src={project.image} alt="image" />
+        <img className =" rounded-sm hover:scale-120 md:hover:scale-140 hover:duration-400 hover:ease-in" src={project.image} alt="image" />
       </div>
     </div>
   );

@@ -48,6 +48,7 @@ const Contact = () => {
   };
 
   return (
+    
     <div className=" mt-6 mb-2 max-md:mb-11 flex flex-col gap-5 justify-center items-center">
       <div>
         <h2 className="topic">Send a Message!</h2>

@@ -30,9 +30,9 @@ const AboutIntro = () => {
         </p>
       </div>
 
-      <div className="bg-secondary-color dark_values px-10 rounded-sm py-8 flex flex-col gap-4">
+      <div className="w-full bg-secondary-color dark_values px-10 rounded-sm py-8 flex flex-col gap-4">
         <h2 className=" topic  flex flex-row gap-4 items-center">Education
-            <SiWikibooks className = "text-2xl" />
+            {/* <SiWikibooks className = "text-2xl" /> */}
         </h2>
 
         <div className="flex flex-col gap-4">

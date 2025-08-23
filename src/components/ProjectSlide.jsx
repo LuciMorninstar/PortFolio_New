@@ -48,22 +48,22 @@ const ProjectSlide = () => {
           <h1 className="topic">My Projects</h1>
         </div>
 
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-15">
           {projs.map((proj,i) => (
             <>
               <div key={i} className="w-full flex flex-col gap-7 py-10 rounded-md px-10 bg-lighter-color dark:bg-dark-fourth-color justify-center center ">
                 <div className="flex flex-row gap-3  ">
-                  <span className="text-3xl text-black dark:text-white">
-                    <FaBuildingUser />
-                  </span>
+                  {/* <span className="text-3xl text-black dark:text-white">
+                    {proj.icon}
+                  </span> */}
                   <h2 className="text-black text-2xl dark:text-white ">
                     {" "}
                     {proj.title}
                   </h2>
                 </div>
 
-                <div className="w-full">
-                  <img className="rounded-md" src={proj.image} alt="image" />
+                <div className="w-full flex flex-row justify-center items-center">
+                  <img className="rounded-md w-[800px]" src={proj.image} alt="image" />
                 </div>
 
                  {/* <SwiperUse send={proj.image}/> */}
